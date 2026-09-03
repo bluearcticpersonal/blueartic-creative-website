@@ -1,0 +1,237 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>BlueArctic — Creative Digital Agency</title>
+     <link rel="stylesheet" href="style.css">
+   </head>
+   
+   </html>
+
+      <header>
+      <div class="logo">
+    <img src="./sdlogo.png" alt="BlueArctic Creative">
+    <span>BlueArctic Creative</span>
+</div>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#work">Our Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+   
+   </header>
+   <section class="ba-hero">
+
+    <!-- Floating Services -->
+    <div class="ba-service video">Video Editing</div>
+
+    <div class="ba-service graphics">Graphics Design</div>
+
+    <div class="ba-service web">Web Development</div>
+
+    <div class="ba-service marketing">Digital Marketing</div>
+
+    <div class="ba-service social">Social Media Management</div>
+
+    <div class="ba-service advertising">Advertising</div>
+
+    <div class="ba-service branding">Branding</div>
+
+  
+   
+
+<!-- Main Content -->
+    <div class="ba-hero-content">
+
+        <p class="ba-eyebrow">
+            BLUEARCTIC CREATIVE
+        </p>
+
+        <h1>
+            We Create.<br>
+            We Connect.<br>
+            <span>We Grow.</span>
+        </h1>
+
+        <p class="ba-description">
+            From individual projects to complete brand solutions,
+            we help businesses and individuals create, connect,
+            and grow — all under one roof.
+        </p>
+
+        <a href="#contact" class="ba-button">
+            Let's Create Together →
+        </a>
+
+    </div>
+
+</section>
+
+<script>
+const services = document.querySelectorAll(".ba-service");
+
+document.addEventListener("mousemove", function(event) {
+
+    const x =
+        (event.clientX / window.innerWidth - 0.5);
+
+    const y =
+        (event.clientY / window.innerHeight - 0.5);
+
+    services.forEach(function(service, index) {
+
+        const strength = 5 + index * 1.5;
+
+        const moveX = x * strength;
+        const moveY = y * strength;
+
+        const rotateX = -y * 5;
+        const rotateY = x * 5;
+
+        service.style.transform =
+            `translate(${moveX}px, ${moveY}px)
+             rotateX(${rotateX}deg)
+             rotateY(${rotateY}deg)`;
+
+    });
+
+});
+</script>
+
+
+      <section class="why" id="about">
+     <h2>More Than Creative. Built With Purpose.</h2>
+     <p>Every project starts with an idea. Our job is to turn that idea into something people notice, understand, remember, and act on.</p>
+     <div class="why-grid">
+       <div class="why-item">
+         <h4>Think.</h4>
+         <p>We understand the idea behind the brand.</p>
+       </div>
+       <div class="why-item">
+         <h4>Create.</h4>
+         <p>We transform it into compelling visual content.</p>
+       </div>
+       <div class="why-item">
+         <h4>Connect.</h4>
+         <p>We put it where the right audience can find it.</p>
+       </div>
+       <div class="why-item">
+         <h4>Grow.</h4>
+         <p>We focus on creating long-term brand value.</p>
+       </div>
+     </div>
+   </section>
+      <section class="contact" id="contact">
+     <h2>Have an Idea? Let's Make It Real.</h2>
+     <p>Whether you're launching a brand, promoting a product, or looking to strengthen your digital presence, we're ready to create something meaningful with you.</p>
+     <button class="btn-primary">Let's Talk →</button>
+   </section>
+
+   <footer>
+     <div class="footer-brand">
+       <h3>BlueArctic</h3>
+       <p>Creative Digital Agency</p>
+     </div>
+     <div class="footer-col">
+       <h4>Services</h4>
+       <p>Branding · Graphic Design · Video · Digital Marketing · Social Media</p>
+     </div>
+     <div class="footer-col">
+       <h4>Connect</h4>
+       <p>Instagram · LinkedIn · Email</p>
+     </div>
+     <p class="copyright">© 2026 BlueArctic — All Rights Reserved</p>
+   </footer>
+
+      <script src="script.js"></script>
+      
+      
+      <div id="whatsapp-chat">
+    <div class="whatsapp-header">
+        <div>
+            <strong>BlueArctic Creative</strong>
+            <span>Typically replies instantly</span>
+        </div>
+
+        <button id="close-whatsapp">&times;</button>
+    </div>
+
+    <div class="whatsapp-message">
+        Hi! 👋 How can we help you today?
+    </div>
+
+    <a
+        href="https://wa.me/9489959739?text=Hi%20BlueArctic%20Creative%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services"
+        target="_blank"
+        class="whatsapp-button"
+    >
+        Chat on WhatsApp
+    </a>
+</div>
+<script>
+const launcher = document.getElementById("whatsapp-launcher");
+const chat = document.getElementById("whatsapp-chat");
+const close = document.getElementById("close-whatsapp");
+
+launcher.onclick = function() {
+    chat.style.display = "block";
+};
+
+close.onclick = function() {
+    chat.style.display = "none";
+};
+</script>
+<div id="whatsapp-chat">
+    <div class="whatsapp-header">
+        <div>
+            <strong>BlueArctic Creative</strong>
+            <span>Typically replies instantly</span>
+        </div>
+
+        <button id="close-whatsapp">&times;</button>
+    </div>
+
+    <div class="whatsapp-message">
+        Hi! 👋 How can we help you today?
+    </div>
+
+    <a
+        href="https://wa.me/YOURNUMBER?text=Hi%20BlueArctic%20Creative%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services"
+        target="_blank"
+        class="whatsapp-button">
+        Chat on WhatsApp
+    </a>
+</div>
+
+<button id="whatsapp-launcher" aria-label="Open WhatsApp chat">
+    💬
+</button>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const launcher = document.getElementById("whatsapp-launcher");
+    const chat = document.getElementById("whatsapp-chat");
+    const close = document.getElementById("close-whatsapp");
+
+    // WhatsApp icon: open / close popup
+    launcher.addEventListener("click", function () {
+
+        if (chat.style.display === "block") {
+            chat.style.display = "none";
+        } else {
+            chat.style.display = "block";
+        }
+
+    });
+
+    // X button: close popup
+    close.addEventListener("click", function () {
+        chat.style.display = "none";
+    });
+
+});
+</script>
